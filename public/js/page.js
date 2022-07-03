@@ -26,6 +26,10 @@ window.onclick = function(event) {
     }
 }
 
+function showlist5() {
+  document.getElementById("list5").classList.toggle("hidden")
+}
+
 function showResponsive(a) {
   document.getElementById(`list-drop-${a}`).classList.toggle('hidden')
 }

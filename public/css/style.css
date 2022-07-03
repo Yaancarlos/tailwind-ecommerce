@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .bi-chevron-down::before {
     font-weight: 700 !important;
 }
@@ -45,3 +49,41 @@
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
   .show {display:block;}
+
+.checkmark {
+    transition: color .2s, border-bottom .2s;
+    -webkit-transition: color .2s, border-bottom .2s;
+    -moz-transition: color .2s, border-bottom .2s;
+    -ms-transition: color .2s, border-bottom .2s;
+    -o-transition: color .2s, border-bottom .2s;
+}
+
+  .check-ecommerce-7:checked ~ .checkmark {
+    color: rgb(156 163 175);
+    border-bottom:2px rgb(156 163 175) solid ;
+  }
+
+  .check-ecommerce-7 ~ a:active {
+    color: rgb(156 163 175);
+    border-bottom:2px rgb(156 163 175) solid ;
+  }
+
+.ecommerce-sect-2::before {
+  content: url(../img/Check\ Icon.png);
+  position: absolute;
+  top: -4px;
+  left: 4px;
+  display: none;
+}
+
+.ecommerce-7-sec:checked ~ .ecommerce-sect-2::before {
+  display: block;
+}
+
+.ecommerce-7-scroll {
+  scroll-behavior: smooth;
+}
+
+.ecommerce-7-scroll::-webkit-scrollbar{
+  height: 20px;
+}

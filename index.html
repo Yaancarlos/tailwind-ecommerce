@@ -272,62 +272,99 @@
         </div>
     </div>
     <div class="bg-gray-200 w-full h-12"></div>
-    <div class="w-full h-auto py-8 px-5 md:py-14 md:px-20 lg:py-16 lg:px-26 xl:px-36">
-        <h1 class="text-violet-page font-medium md:font-bold lg:text-4xl md:text-3xl sm:text-2xl text-xl xl:text-5xl">Woman's Clothes</h1>
-        <div class="flex mt-10">
-            <div class="w-72">
+    <div class="w-full h-auto py-8 md:py-14 md:px-20 lg:py-16 lg:px-26 xl:px-36">
+        <div class="flex justify-between mt-10">
+            <div class="hidden md:block w-72">
                 <ul class="flex flex-col">
-                    <li><a href=""></a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Jackets & Coats</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Hoodies</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-violet-page text-sm md:text-lg font-medium rounded-lg p-2">T-shirt & Vests</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Shirts</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Blazers & Suits</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Jeans</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Trousers</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Shorts</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Underwear</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Accessories</a></li>
                 </ul>
             </div>
-            <div class="grid flex-1 gap-10 grid-cols-1 grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
-                <div class="flex flex-col gap-5">
-                    <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-4-img-6.png);"></div>
-                    <div class="inline-flex flex-col items-center gap-2">
-                        <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">BRACELET WITH PENDANTS</h3>
-                        <span class="text-indigo-500 text-lg font-medium">$12</span>
-                        <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Buy Now</button>
+            <div class="inline-flex flex-auto gap-7 flex-col">
+                <div class="inline-flex px-4 md:px-0 relative items-center justify-between">
+                    <button class="block px-1.5 py-0.5 text-violet-page text-2xl outline outline-gray-200 rounded-lg md:hidden" onclick="showlist5()"><i class="bi bi-list"></i></button>
+                    <div class="absolute hidden left-0 w-full bg-white z-10 top-12" id="list5">
+                        <ul class="flex px-5 flex-col">
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Jackets & Coats</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Hoodies</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-violet-page text-sm md:text-lg font-medium rounded-lg p-2">T-shirt & Vests</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Shirts</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Blazers & Suits</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Jeans</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Trousers</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Shorts</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Underwear</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Accessories</a></li>
+                        </ul>
                     </div>
+                    <h2 class="text-xs md:text-sm text-gray-400 font-bold tracking-widest">6 ITEMS</h2>
+                    <form action="#">
+                        <label for="" class="text-xs md:text-sm text-gray-400 font-bold tracking-widest">SORT BY</label>
+                        <select name="" class="text-xs md:text-sm text-violet-page font-bold tracking-widest" id="">
+                            <option value=""><span>RECOMMENDED</span></option>
+                            <option value=""><span>LOREM IPSUM</span></option>
+                            <option value=""><span>LOREM IPSUM</span></option>
+                            <option value=""><span>LOREM IPSUM</span></option>
+                        </select>
+                    </form>
                 </div>
-                <div class="flex flex-col gap-5">
-                    <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-4-img-5.png);"></div>
+                <div class="grid px-5 md:px-0 gap-10 grid-cols-1 grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-5-img-5.png);"></div>
                         <div class="inline-flex flex-col items-center gap-2">
-                            <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">PERSONALIZED BRACELET</h3>
-                            <span class="text-indigo-500 text-lg font-medium">$29</span>
-                            <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Buy Now</button>
+                            <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">SLUB JERSEY T-SHIRT</h3>
+                            <span class="text-indigo-500 text-lg font-medium">$12.99</span>
+                            <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Add to bag</button>
                         </div>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-4-img-4.png);"></div>
-                        <div class="inline-flex flex-col items-center gap-2">
-                            <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">DAINTY INITIAL BRACALET</h3>
-                            <span class="text-indigo-500 text-lg font-medium">$19</span>
-                            <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Buy Now</button>
-                        </div>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-4-img-3.png);"></div>
-                        <div class="inline-flex flex-col items-center gap-2">
-                            <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">PERSONALIZED BRACALET</h3>
-                            <span class="text-indigo-500 text-lg font-medium">$31</span>
-                            <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Buy Now</button>
-                        </div>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-4-img-2.png);"></div>
-                        <div class="inline-flex flex-col items-center gap-2">
-                            <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">IRON BRACELET</h3>
-                            <span class="text-indigo-500 text-lg font-medium">$39</span>
-                            <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Buy Now</button>
-                        </div>
-                </div>
-                <div class="flex flex-col gap-5">
-                    <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-4-img-1.png);"></div>
-                        <div class="inline-flex flex-col items-center gap-2">
-                            <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">BRACELET WITH STONES</h3>
-                            <span class="text-indigo-500 text-lg font-medium">$15</span>
-                            <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Buy Now</button>
-                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-5-img-4.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">PRINTED T-SHIRT</h3>
+                                <span class="text-indigo-500 text-lg font-medium">$12.99</span>
+                                <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Add to bag</button>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-5-img-3.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">COTTON T-SHIRT</h3>
+                                <span class="text-indigo-500 text-lg font-medium">$12.99</span>
+                                <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Add to bag</button>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-5-img-6.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">T-SHIRT WITH A MOFIT</h3>
+                                <span class="text-indigo-500 text-lg font-medium">$12.99</span>
+                                <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Add to bag</button>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-5-img-2.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">COTTON T-SHIRT REGULAR FIT</h3>
+                                <span class="text-indigo-500 text-lg font-medium">$12.99</span>
+                                <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Add to bag</button>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-5-img-1.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">SLUB JERSEY T-SHIRT</h3>
+                                <span class="text-indigo-500 text-lg font-medium">$12.99</span>
+                                <button class="border-2 border-solid hover:border-page border-gray-300 rounded-full px-2 py-1 text-violet-page font-medium text-sm">Add to bag</button>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -340,7 +377,396 @@
           <a href="#">Link 2</a>
           <a href="#">Link 3</a>
         </div>
-      </div>
+    </div>
+    <div class="bg-gray-200 w-full h-12"></div>
+    <div class="flex flex-col md:flex-row w-full h-auto justify-between">
+        <div class="bg-cover bg-center xl:w-[40rem] lg:w-[30rem] md:w-96 h-64 md:h-auto w-full bg-no-repeat" style="background-image: url(./public/img/ecommerce-6-img-bg.png);"></div>
+        <div class="inline-flex justify-between lg:px-20 sm:py-10 sm:px-14 p-10 lg:py-20 md:py-16 gap-10 flex-1 flex-col">
+            <div class="inline-flex flex-col gap-5">
+                <span class="text-violet-page text-xs md:text-sm tracking-widest font-bold">BASKETBALL SHOES</span>
+                <h2 class="text-violet-page text-xl md:text-2xl lg:text-4xl font-bold">LeBron XV KSA</h2>
+                <p class="text-sm md:text-base text-gray-400 font-normal ">The combination of Air Max and Zoom provides an insanely comfortable cushioning that works extremely well for big guys that need a lot of impact protection.</p>
+            </div>
+            <div>
+                <div class="flex mb-10 items-center gap-5">
+                    <button class="px-7 py-2 hover:bg-indigo-600 bg-indigo-500 text-white text-sm md:text-lg font-medium rounded-full">Buy Now</button>
+                    <span class="text-violet-page text-base font-medium">$499</span>
+                </div>
+                <div class="flex gap-5">
+                    <figure><img src="./public/img/ecommerce-6-preview (1).png" loading=lazy draggable="false" alt=""></figure>
+                    <figure><img src="./public/img/ecommerce-6-preview (2).png" loading=lazy draggable="false" alt=""></figure>
+                    <figure><img src="./public/img/ecommerce-6-preview (3).png" loading=lazy draggable="false" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-200 w-full h-12"></div>
+    <div class="w-full px-5 h-auto pt-8 md:pt-14 md:px-20 lg:pt-16 lg:px-26 xl:px-36">
+        <span class="text-gray-400 tracking-widest text-xs md:text-sm mb-5 table mx-auto font-bold">MEN CASULA WEAR</span>
+        <h1 class="text-violet-page font-medium text-xl md:text-2xl lg:text-3xl xl:text-3xl text-center mb-14 md:font-bold">Your Daily Dose of New Inspiration</h1>
+        <div>
+            <ul class="flex gap-5">
+                <li>
+                    <label class="relative" for="checkbox-7-1">
+                        <input type="radio" checked class="check-ecommerce-7 absolute w-0 h-0 top-0 left-0" name="ecommerce-7-fir" id="checkbox-7-1">
+                        <a href="#ecommerce-7-Accessories" class="checkmark font-medium text-violet-page md:text-base text-sm lg:text-lg">Accessories</a>
+                    </label>
+                </li>
+                <li>
+                    <label class="relative" for="checkbox-7-2">
+                        <input type="radio" class="check-ecommerce-7 absolute w-0 h-0 top-0 left-0" name="ecommerce-7-fir" id="checkbox-7-2">
+                        <a href="#ecommerce-7-Hoodies" class="checkmark font-medium text-violet-page md:text-base text-sm lg:text-lg">Hoodies</a>
+                    </label>
+                </li>
+                <li>
+                    <label class="relative" for="checkbox-7-3">
+                        <input type="radio" class="check-ecommerce-7 absolute w-0 h-0 top-0 left-0" name="ecommerce-7-fir" id="checkbox-7-3">
+                        <span class="checkmark font-medium text-violet-page md:text-base text-sm lg:text-lg">T-shirts & Vests</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="relative" for="checkbox-7-4">
+                        <input type="radio" class="check-ecommerce-7 absolute w-0 h-0 top-0 left-0" name="ecommerce-7-fir" id="checkbox-7-4">
+                        <span class="checkmark font-medium text-violet-page md:text-base text-sm lg:text-lg">Shirts</span>
+                    </label>
+                </li>
+                <li>
+                    <label class="relative" for="checkbox-7-5">
+                        <input type="radio" class="check-ecommerce-7 absolute w-0 h-0 top-0 left-0" name="ecommerce-7-fir" id="checkbox-7-5">
+                        <span class="checkmark font-medium text-violet-page md:text-base text-sm lg:text-lg">Blazers & Suits</span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ecommerce-7-scroll overflow-x-hidden snap-x w-full flex h-auto">
+        <div class="min-w-full px-5 pb-8 md:pb-14 md:px-20 lg:pb-16 lg:px-26 xl:px-36">
+            <div id="ecommerce-7-Accessories" class="grid snap-center mt-10 gap-10 grid-cols-1 sm:grid-cols-2 sm:grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2">
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-1.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Socks</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$3.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-1-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-1-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-indigo-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-1-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-1-4">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-4">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-yellow-400 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-2.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Socks</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$2.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-2-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-2-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-indigo-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-2-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-2-4">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-4">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-yellow-400 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-3.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Wallet</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$20.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-3-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-3" id="ecommerce-7-sec-3-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-3-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-3" id="ecommerce-7-sec-3-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-violet-800 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-3-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-3" id="ecommerce-7-sec-3-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-green-400 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-4.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Sunglasses</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$13.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-4-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-4" id="ecommerce-7-sec-4-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-4-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-4" id="ecommerce-7-sec-4-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-indigo-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-4-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-4" id="ecommerce-7-sec-4-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-5.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Bag</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$43.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-5-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-5" id="ecommerce-7-sec-5-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-red-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-5-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-5" id="ecommerce-7-sec-5-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-6.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Braclet</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$3.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-6-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-6" id="ecommerce-7-sec-6-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-6-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-6" id="ecommerce-7-sec-6-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-6-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-6" id="ecommerce-7-sec-6-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-500 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-7.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Ring</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$6.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-7-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-7" id="ecommerce-7-sec-7-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-7-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-7" id="ecommerce-7-sec-7-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-7-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-7" id="ecommerce-7-sec-7-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-sky-500 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/ecommerce-7-img-8.png);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Gift Accessories</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$19.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="min-w-full px-5 pb-8 md:pb-14 md:px-20 lg:pb-16 lg:px-26 xl:px-36">
+            <div id="ecommerce-7-Hoodies" class="snap-center grid mt-10 gap-10 grid-cols-1 sm:grid-cols-2 sm:grid-rows-4 md:grid-cols-3 md:grid-rows-3 lg:grid-cols-4 lg:grid-rows-2">
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Socks</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$3.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-1-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-1-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-indigo-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-1-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-1-4">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-1" id="ecommerce-7-sec-1-4">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-yellow-400 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Socks</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$2.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-2-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-2-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-indigo-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-2-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-2-4">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-2" id="ecommerce-7-sec-2-4">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-yellow-400 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Wallet</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$20.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-3-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-3" id="ecommerce-7-sec-3-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-3-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-3" id="ecommerce-7-sec-3-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-violet-800 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-3-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-3" id="ecommerce-7-sec-3-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-green-400 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Sunglasses</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$13.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-4-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-4" id="ecommerce-7-sec-4-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-4-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-4" id="ecommerce-7-sec-4-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-indigo-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-4-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-4" id="ecommerce-7-sec-4-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Bag</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$43.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-5-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-5" id="ecommerce-7-sec-5-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-red-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-5-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-5" id="ecommerce-7-sec-5-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Braclet</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$3.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-6-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-6" id="ecommerce-7-sec-6-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-700 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-6-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-6" id="ecommerce-7-sec-6-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-6-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-6" id="ecommerce-7-sec-6-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-500 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Ring</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$6.99</span>
+                    </div>
+                    <div class="flex gap-1">
+                        <label class="relative" for="ecommerce-7-sec-7-1">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-7" id="ecommerce-7-sec-7-1">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-rose-600 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-7-2">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-7" id="ecommerce-7-sec-7-2">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-blue-400 rounded-full block"></span>
+                        </label>
+                        <label class="relative" for="ecommerce-7-sec-7-3">
+                            <input type="radio" class="ecommerce-7-sec absolute w-0 h-0 opacity-0 top-0 left-0" name="ecommerce-7-sec-7" id="ecommerce-7-sec-7-3">
+                            <span class="ecommerce-sect-2 w-5 h-5 bg-sky-500 rounded-full block"></span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <div class="w-full bg-center bg-cover bg-no-repeat rounded-lg h-[23rem]" style="background-image: url(./public/img/image-noavaliable.webp);"></div>
+                    <div class="inline-flex my-3 items-center w-full justify-between">
+                        <span class="font-medium text-violet-page md:text-base text-sm lg:text-lg">Gift Accessories</span>
+                        <span class="bg-gray-300 md:text-base rounded-full px-2 py-0.5 text-sm font-medium text-gray-400">$19.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-200 w-full h-12"></div>
+    <div class="bg-gray-200 w-full h-12"></div>
     <script src="./public/js/page.js"></script>
 </body>
 </html>
