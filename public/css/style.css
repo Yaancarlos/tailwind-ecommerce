@@ -58,12 +58,10 @@ html {
     -o-transition: color .2s, border-bottom .2s;
 }
 
-  .check-ecommerce-7:checked ~ .checkmark {
-    color: rgb(156 163 175);
-    border-bottom:2px rgb(156 163 175) solid ;
-  }
-
-  .check-ecommerce-7 ~ a:active {
+  .check-ecommerce-7 ~ a:active,
+  .check-ecommerce-7 ~ a:hover,
+  .check-ecommerce-7:checked ~ .checkmark
+  .checkmark:hover {
     color: rgb(156 163 175);
     border-bottom:2px rgb(156 163 175) solid ;
   }
@@ -87,3 +85,43 @@ html {
 .ecommerce-7-scroll::-webkit-scrollbar{
   height: 20px;
 }
+
+.check-ecommerce-11:checked ~ .checkmark-ecommerce-11{
+  background: #fff;
+}
+
+.bg-opacity-50 {
+  --tw-bg-opacity: .5 !important;
+  transition: opacity .3s;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+}
+
+
+.trans{
+  border-radius: .5rem;
+  transition: border-radius 0.5s linear;
+  -webkit-transition: border-radius 0.5s linear;
+  -moz-transition: border-radius 0.5s linear;
+  -ms-transition: border-radius 0.5s linear;
+  -o-transition: border-radius 0.5s linear;
+  -webkit-border-radius: .5rem;
+  -moz-border-radius: .5rem;
+  -ms-border-radius: .5rem;
+  -o-border-radius: .5rem;
+}
+
+.trans:hover {
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  -ms-border-radius: 9999px;
+  -o-border-radius: 9999px;
+}
+
+.bg-opacity-50:hover {
+  opacity: 1;
+}
+
