@@ -101,27 +101,26 @@ html {
 
 
 .trans{
+  border-radius: 128px;
+  transition: border-radius .5s;
+  -webkit-transition: border-radius .5s;
+  -moz-transition: border-radius .5s;
+  -ms-transition: border-radius .5s;
+  -o-transition: border-radius .5s;
+  -webkit-border-radius: 128px;
+  -moz-border-radius: 128px;
+  -ms-border-radius: 128px;
+  -o-border-radius: 128px;
+}
+
+.trans:hover {
   border-radius: .5rem;
-  transition: border-radius 0.5s linear;
-  -webkit-transition: border-radius 0.5s linear;
-  -moz-transition: border-radius 0.5s linear;
-  -ms-transition: border-radius 0.5s linear;
-  -o-transition: border-radius 0.5s linear;
   -webkit-border-radius: .5rem;
   -moz-border-radius: .5rem;
   -ms-border-radius: .5rem;
   -o-border-radius: .5rem;
 }
 
-.trans:hover {
-  border-radius: 9999px;
-  -webkit-border-radius: 9999px;
-  -moz-border-radius: 9999px;
-  -ms-border-radius: 9999px;
-  -o-border-radius: 9999px;
-}
-
 .bg-opacity-50:hover {
   opacity: 1;
 }
-
