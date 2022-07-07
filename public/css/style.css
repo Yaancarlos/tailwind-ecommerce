@@ -97,8 +97,16 @@ html {
   background: #fff;
 }
 
+.bg-opacity-80{
+  --tw-bg-opacity: .8 !important;
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: .5 !important;
+}
+
+.bg-opacity-50,
+.bg-opacity-80 {
   transition: opacity .3s;
   -webkit-transition: opacity .3s;
   -moz-transition: opacity .3s;
@@ -128,6 +136,7 @@ html {
   -o-border-radius: .5rem;
 }
 
-.bg-opacity-50:hover {
+.bg-opacity-50:hover,
+.bg-opacity-80:hover {
   opacity: 1;
 }
