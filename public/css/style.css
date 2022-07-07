@@ -74,6 +74,13 @@ html {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .ecommerce-sect-2::before {
+    top: -3.5px;
+    left: 6px;
+  }
+}
+
 .ecommerce-7-sec:checked ~ .ecommerce-sect-2::before {
   display: block;
 }
