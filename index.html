@@ -1643,8 +1643,11 @@
     </div>
     <div class="bg-gray-200 w-full h-12"></div>
     <div class="w-full h-auto py-8 md:py-14 md:px-20 lg:py-16 lg:px-26 xl:px-36">
-        <h2 class="text-violet-page font-bold md:text-2xl lg:text-3xl xl:text-4xl text-xl">Ice Cream</h2>
-        <div class="flex justify-between pt-8">
+        <div class="flex px-4 sm:pb-8 lg:px-0 justify-between">
+            <h2 class="text-violet-page font-bold lg:pl-0 md:text-2xl lg:text-3xl xl:text-4xl text-xl">Ice Cream</h2>
+            <button class="block px-1.5 py-0.5 text-violet-page text-2xl outline outline-gray-200 rounded-lg md:hidden" onclick="showResponsive(6)"><i class="bi bi-list"></i></button>
+        </div>
+        <div class="flex justify-between">
             <div class="hidden md:block xl:w-60 lg:w-48 md:w-32 2xl:w-72">
                 <ul class="flex flex-col">
                     <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Chocolate</a></li>
@@ -1659,11 +1662,10 @@
                     <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Pistacho</a></li>
                 </ul>
             </div>
-            <div class="inline-flex flex-1 gap-7 flex-col">
+            <div class="inline-flex flex-1 flex-col">
                 <div class="inline-flex px-4 md:px-0 relative items-center justify-between">
-                    <button class="block px-1.5 py-0.5 text-violet-page text-2xl outline outline-gray-200 rounded-lg md:hidden" onclick="showResponsive(6)"><i class="bi bi-list"></i></button>
-                    <div class="absolute hidden left-0 w-full bg-white z-10 top-12" id="list-drop-6">
-                        <ul class="flex px-5 flex-col">
+                    <div class="absolute hidden left-0 w-full bg-white z-10 top-5" id="list-drop-6">
+                        <ul class="flex md:hidden px-5 flex-col">
                             <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Chocolate</a></li>
                             <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Vanilla</a></li>
                             <li class="py-2"><a class="hover:bg-gray-100 text-violet-page text-sm md:text-lg font-medium rounded-lg p-2">Banana</a></li>
@@ -1677,7 +1679,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 gap-14 grid-cols-1">
+                <div class="grid grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 p-6 md:py-0 md:px-20 lg:px-0 gap-14 grid-cols-1">
                     <div class="flex flex-col gap-5">
                         <div class="w-full h-96 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-20-img-2.png);"></div>
                         <div class="inline-flex flex-col items-start gap-4">
@@ -1688,13 +1690,13 @@
                                     <li class="text-gray-400 text-xs md:text-sm font-medium"><span class="text-violet-page md:text-base text-sm font-bold">123</span> Reviews</li>
                                     <li class="text-gray-400 text-xs md:text-sm font-medium"><span class="text-violet-page md:text-base text-sm font-bold">23</span> Likes</li>
                                 </ul>
-                                <button class="bg-emerald-300 hover:bg-emerald-400 rounded-full px-6 md:px-10 md:py-3 py-2 text-white font-medium text-sm">Purchase for $4.55</button>
+                                <button class="bg-emerald-300 hover:bg-emerald-400 rounded-full px-6 xl:px-10 md:py-3 py-2 text-white font-medium text-sm">Purchase for $4.55</button>
                             </div>
                         </div>
                     </div>
                     <div class="flex flex-col gap-5">
-                        <div class="w-full h-96 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-20-img-1.png);"></div>
-                        <div class="inline-flex flex-col items-start justify-between gap-4">
+                        <div class="w-full min-h-[24rem] rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-20-img-1.png);"></div>
+                        <div class="inline-flex flex-col items-start h-full justify-between gap-4">
                             <h3 class="text-xl md:text-2xl lg:text-3xl font-bold text-violet-page">Strawberry Boom</h3>
                             <p class="text-gray-400 text-lg font-normal">This really is The Best Strawberry Ice Cream Recipe around. It's super creamy and has tons of fresh strawberry flavor.</p>
                             <div class="flex justify-between w-full items-center gap-10">
@@ -1702,7 +1704,7 @@
                                     <li class="text-gray-400 text-xs md:text-sm font-medium"><span class="text-violet-page md:text-base text-sm font-bold">123</span> Reviews</li>
                                     <li class="text-gray-400 text-xs md:text-sm font-medium"><span class="text-violet-page md:text-base text-sm font-bold">23</span> Likes</li>
                                 </ul>
-                                <button class="bg-emerald-300 hover:bg-emerald-400 rounded-full px-6 md:px-10 md:py-3 py-2 text-white font-medium text-sm">Purchase for $3.55</button>
+                                <button class="bg-emerald-300 hover:bg-emerald-400 rounded-full px-6 xl:px-10 md:py-3 py-2 text-white font-medium text-sm">Purchase for $3.55</button>
                             </div>
                         </div>
                     </div>
@@ -1740,6 +1742,201 @@
                     <h2 class="text-violet-page text-xl md:text-2xl lg:text-3xl font-bold">Consoles</h2>
                 </div>
                 <div class="bg-cover bg-center bg-no-repeat w-full sm:w-56 h-64 rounded-lg" style="background-image: url(./public/img/ecommerce-21-img-1.png);"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-200 w-full h-12"></div>
+    <div class="w-full h-auto py-8 md:py-14 md:px-20 lg:py-16 lg:px-26 xl:px-36">
+        <div class="flex justify-between mt-10">
+            <div class="hidden md:block w-72">
+                <ul class="flex flex-col">
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Pear</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Watermelon</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-violet-page text-sm md:text-lg font-medium rounded-lg p-2">Banana</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Strawberry</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Melon</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Mix Fruits</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Pineapple</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Blueberry</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Cherry</a></li>
+                    <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Kiwi</a></li>
+                </ul>
+            </div>
+            <div class="inline-flex flex-auto gap-7 flex-col">
+                <div class="inline-flex px-4 md:px-0 relative items-center justify-between">
+                    <button class="block px-1.5 py-0.5 text-violet-page text-2xl outline outline-gray-200 rounded-lg md:hidden" onclick="showlist5()"><i class="bi bi-list"></i></button>
+                    <div class="absolute hidden left-0 w-full bg-white z-10 top-12" id="list5">
+                        <ul class="flex px-5 flex-col">
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Pear</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Watermelon</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-violet-page text-sm md:text-lg font-medium rounded-lg p-2">Banana</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Strawberry</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Melon</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Mix Fruits</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Pineapple</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Blueberry</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Cherry</a></li>
+                            <li class="py-2"><a class="hover:bg-gray-100 text-gray-400 text-sm md:text-lg font-medium rounded-lg p-2">Kiwi</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="text-xs md:text-sm text-gray-400 font-bold tracking-widest">6 ITEMS</h2>
+                    <form action="#">
+                        <label for="" class="text-xs md:text-sm text-gray-400 font-bold tracking-widest">SORT BY</label>
+                        <select name="" class="text-xs md:text-sm text-violet-page font-bold tracking-widest" id="">
+                            <option value=""><span>RECOMMENDED</span></option>
+                            <option value=""><span>LOREM IPSUM</span></option>
+                            <option value=""><span>LOREM IPSUM</span></option>
+                            <option value=""><span>LOREM IPSUM</span></option>
+                        </select>
+                    </form>
+                </div>
+                <div class="grid px-5 md:px-0 gap-10 grid-cols-1 grid-rows-6 sm:grid-cols-2 sm:grid-rows-3 lg:grid-cols-3 lg:grid-rows-2">
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-22-img-1.png);"></div>
+                        <div class="inline-flex flex-col items-center gap-2">
+                            <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">PEAR</h3>
+                            <p class="text-gray-400 text-lg font-medium">$9.99 <span class="text-xs md:text-sm"> Per Kilo</span></p>
+                            <div>
+                                <button class="border-2 border-solid hover:bg-indigo-500 hover:text-white border-indigo-500 rounded-full px-2 py-1 text-indigo-500 font-medium text-sm">Order Now</button>
+                                <button class="rounded-full px-2 py-1 text-indigo-500 font-medium hover:text-indigo-600 text-sm">Add to bag</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-22-img-2.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">STRAWBERRY</h3>
+                                <p class="text-gray-400 text-lg font-medium">$8.99 <span class="text-xs md:text-sm"> Per Kilo</span></p>
+                                <div>
+                                    <button class="border-2 border-solid hover:bg-indigo-500 hover:text-white border-indigo-500 rounded-full px-2 py-1 text-indigo-500 font-medium text-sm">Order Now</button>
+                                    <button class="rounded-full px-2 py-1 text-indigo-500 font-medium hover:text-indigo-600 text-sm">Add to bag</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-22-img-3.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">KIWI</h3>
+                                <p class="text-gray-400 text-lg font-medium">$6.99 <span class="text-xs md:text-sm"> Per Kilo</span></p>
+                                <div>
+                                    <button class="border-2 border-solid hover:bg-indigo-500 hover:text-white border-indigo-500 rounded-full px-2 py-1 text-indigo-500 font-medium text-sm">Order Now</button>
+                                    <button class="rounded-full px-2 py-1 text-indigo-500 font-medium hover:text-indigo-600 text-sm">Add to bag</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-22-img-4.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">WATERMELON</h3>
+                                <p class="text-gray-400 text-lg font-medium">$2.99 <span class="text-xs md:text-sm"> Per Kilo</span></p>
+                                <div>
+                                    <button class="border-2 border-solid hover:bg-indigo-500 hover:text-white border-indigo-500 rounded-full px-2 py-1 text-indigo-500 font-medium text-sm">Order Now</button>
+                                    <button class="rounded-full px-2 py-1 text-indigo-500 font-medium hover:text-indigo-600 text-sm">Add to bag</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-22-img-5.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">BLUEBERRY</h3>
+                                <p class="text-gray-400 text-lg font-medium">$22.99 <span class="text-xs md:text-sm">Per Kilo</span></p>
+                                <div>
+                                    <button class="border-2 border-solid hover:bg-indigo-500 hover:text-white border-indigo-500 rounded-full px-2 py-1 text-indigo-500 font-medium text-sm">Order Now</button>
+                                    <button class="rounded-full px-2 py-1 text-indigo-500 font-medium hover:text-indigo-600 text-sm">Add to bag</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="flex flex-col gap-5">
+                        <div class="w-full h-72 rounded-lg bg-center bg-cover bg-no-repeat" style="background-image: url(./public/img/ecommerce-22-img-6.png);"></div>
+                            <div class="inline-flex flex-col items-center gap-2">
+                                <h3 class="text-xs md:text-sm font-bold text-violet-page tracking-widest">CHERRY</h3>
+                                <p class="text-gray-400 text-lg font-medium">$13.99 <span class="text-xs md:text-sm">Per Kilo</span></p>
+                                <div>
+                                    <button class="border-2 border-solid hover:bg-indigo-500 hover:text-white border-indigo-500 rounded-full px-2 py-1 text-indigo-500 font-medium text-sm">Order Now</button>
+                                    <button class="rounded-full px-2 py-1 text-indigo-500 font-medium hover:text-indigo-600 text-sm">Add to bag</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-200 w-full h-12"></div>
+    <div class="flex flex-col md:flex-row w-full h-auto bg-white justify-between">
+        <div class="bg-cover bg-center xl:w-[40rem] lg:w-[30rem] md:w-96 h-64 md:h-auto w-full bg-no-repeat" style="background-image: url(./public/img/ecommerce-23-bg.png);"></div>
+        <div class="inline-flex text-violet-page justify-between xl:px-20 sm:py-10 sm:px-14 p-10 lg:py-20 md:py-16 gap-10 flex-1 flex-col">
+            <div class="inline-flex flex-col gap-5">
+                <span class="text-xs md:text-sm tracking-widest font-bold">SUN GLASSES</span>
+                <h2 class="text-xl md:text-2xl lg:text-4xl font-bold">Ray Ban RB4187</h2>
+                <p class="text-sm md:text-base text-gray-400 font-normal ">Ray-Ban chirs sunglasses are a stylish new addition to the Highstreet colletion, These unisex sunglasses are designed with unique style cues</p>
+            </div>
+            <div>
+                <div class="flex gap-3 mb-14">
+                    <figure><img src="./public/img/ecommerce-22-preview-1.png" loading=lazy draggable="false" alt=""></figure>
+                    <figure><img src="./public/img/ecommerce-22-preview-2.png" loading=lazy draggable="false" alt=""></figure>
+                    <figure><img src="./public/img/ecommerce-22-preview-3.png" loading=lazy draggable="false" alt=""></figure>
+                </div>
+                <div class="flex lg:flex-row flex-col items-center gap-5">
+                    <button class="px-7 w-full lg:w-auto py-2 bg-rose-500 hover:bg-rose-600 text-white text-sm md:text-lg font-medium rounded-full">Purchase for $115</button>
+                    <button class="px-7 w-full lg:w-auto py-2 bg-transparent text-rose-500 hover:text-rose-600 text-sm md:text-lg font-medium rounded-full">Credit Purchase</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-200 w-full h-12"></div>
+    <div class="flex flex-col md:flex-row w-full h-auto bg-white justify-between">
+        <div class="bg-cover bg-center xl:w-[40rem] lg:w-[30rem] md:w-96 h-64 md:h-auto w-full bg-no-repeat" style="background-image: url(./public/img/ecommerce-24-bg.png);"></div>
+        <div class="inline-flex gap-10 p-14 lg:p-20 xl:pl-24 2xl:pr-40 flex-1 flex-col">
+            <h2 class="text-xl md:text-2xl text-violet-page lg:text-4xl font-bold">Hor Air Balloon Flights</h2>
+            <p class="text-sm md:text-base text-gray-400 font-normal ">Explore the world in the air with an amazing view of some of the places you have never seen before with our excellent hot air balloon Flights</p>
+            <div class="grid grid-rows-3 justify-items-center gap-7 grid-cols-1">
+                <div class="flex flex-col xl:flex-row  max-w-lg gap-3 lg:gap-7">
+                    <div class="bg-center bg-no-repeat rounded-lg h-44 w-full xl:w-56 bg-cover" style="background-image: url(./public/img/ecommerce-24-preview-2\ \(3\).png);"></div>
+                    <div class="inline-flex gap-4 flex-1 justify-between py-3 flex-col">
+                        <div>
+                            <div class="mb-3">
+                                <h3 class="text-violet-page inline-block tracking-widest text-xs md:text-sm font-bold">FLIGHT FOR ONE</h3>
+                                <span class="text-gray-400 inline-block float-right text-sm md:text-base font-medium">$169</span>
+                            </div>
+                            <p class="text-gray-400 text-sm md:text-base font-medium">Enjoy a morning of serenity with an unforgettable 60 minutes flight</p>
+                        </div>
+                        <div class="inline-flex  gap-3 md:flex-row flex-col">
+                            <button class="bg-indigo-500 w-full md:w-auto px-3.5 2xl:px-5 py-2 rounded-full text-white text-sm md:text-base hover:bg-indigo-600">Let's Go</button>
+                            <button class="border-2 rounded-full w-full md:w-auto border-gray-300 text-sm md:text-base hover:bg-gray-300 hover:text-white text-gray-300 font-medium px-3.5 2xl:px-5 py-1.5 border-solid">More Info</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col xl:flex-row  max-w-lg gap-3 lg:gap-7">
+                    <div class="bg-center bg-no-repeat rounded-lg h-44 w-full xl:w-56 bg-cover" style="background-image: url(./public/img/ecommerce-24-preview-2\ \(2\).png);"></div>
+                    <div class="inline-flex gap-4 flex-1 justify-between py-3 flex-col">
+                        <div>
+                            <div class="mb-3">
+                                <h3 class="text-violet-page inline-block tracking-widest text-xs md:text-sm font-bold">FLIGHT FOR TWO</h3>
+                                <span class="text-gray-400 inline-block float-right text-sm md:text-base font-medium">$269</span>
+                            </div>
+                            <p class="text-gray-400 text-sm md:text-base font-medium">Touchdown in style with Champagne and a gift hamper</p>
+                        </div>
+                        <div class="inline-flex  gap-3 md:flex-row flex-col">
+                            <button class="bg-indigo-500 w-full md:w-auto px-3.5 2xl:px-5 py-2 rounded-full text-white text-sm md:text-base hover:bg-indigo-600">Let's Go</button>
+                            <button class="border-2 rounded-full w-full md:w-auto border-gray-300 text-sm md:text-base hover:bg-gray-300 hover:text-white text-gray-300 font-medium px-3.5 2xl:px-5 py-1.5 border-solid">More Info</button>
+                        </div>
+                    </div>
+                </div><div class="flex flex-col xl:flex-row  max-w-lg gap-3 lg:gap-7">
+                    <div class="bg-center bg-no-repeat rounded-lg h-44 w-full xl:w-56 bg-cover" style="background-image: url(./public/img/ecommerce-24-preview-2\ \(1\).png);"></div>
+                    <div class="inline-flex gap-4 flex-1 justify-between py-3 flex-col">
+                        <div>
+                            <div class="mb-3">
+                                <h3 class="text-violet-page inline-block tracking-widest text-xs md:text-sm font-bold">WEDDING CELEBRATION</h3>
+                                <span class="text-gray-400 inline-block float-right text-sm md:text-base font-medium">$329</span>
+                            </div>                            
+                            <p class="text-gray-400 text-sm md:text-base font-medium">Take a magical sunrise flight together in an iconic balloon</p>
+                        </div>
+                        <div class="inline-flex  gap-3 md:flex-row flex-col">
+                            <button class="bg-indigo-500 w-full md:w-auto px-3.5 2xl:px-5 py-2 rounded-full text-white text-sm md:text-base hover:bg-indigo-600">Let's Go</button>
+                            <button class="border-2 rounded-full w-full md:w-auto border-gray-300 text-sm md:text-base hover:bg-gray-300 hover:text-white text-gray-300 font-medium px-3.5 2xl:px-5 py-1.5 border-solid">More Info</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
