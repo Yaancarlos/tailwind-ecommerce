@@ -53,3 +53,9 @@ window.onclick = function(event) {
     }
   }
 }
+
+textInput = document.querySelector('#numberInput');
+plusButton = document.querySelector('#plusButton');
+minusButton = document.querySelector('#minusButton'); 
+var plus = plusButton.onclick = () => textInput.value = parseInt(textInput.value) + 1;
+var minus = minusButton.onclick = () => textInput.value = parseInt(textInput.value) - 1;

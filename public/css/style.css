@@ -105,8 +105,13 @@ html {
   --tw-bg-opacity: .5 !important;
 }
 
+.eco-31-hover{
+  opacity: 0;
+}
+
 .bg-opacity-50,
-.bg-opacity-80 {
+.bg-opacity-80,
+.eco-31-hover {
   transition: opacity .3s;
   -webkit-transition: opacity .3s;
   -moz-transition: opacity .3s;
@@ -137,6 +142,7 @@ html {
 }
 
 .bg-opacity-50:hover,
-.bg-opacity-80:hover {
+.bg-opacity-80:hover,
+.eco-31:hover .eco-31-hover  {
   opacity: 1;
 }
