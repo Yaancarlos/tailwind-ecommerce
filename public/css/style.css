@@ -146,3 +146,9 @@ html {
 .eco-31:hover .eco-31-hover  {
   opacity: 1;
 }
+
+.ecommerce-33-sec-2:checked ~ .ecommerce-check-33-sec-2{
+  background: #1E0E62;
+  color: #ffffff;
+  border-color: #1E0E62;
+}
